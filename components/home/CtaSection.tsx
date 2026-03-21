@@ -13,10 +13,10 @@ export default function CtaSection() {
     <section style={{ background: "linear-gradient(135deg, #12094A 0%, #0A0428 100%)", borderTop: `1px solid rgba(200,169,110,0.12)` }}>
       <div style={{ ...sectionContainer, textAlign: "center", paddingTop: 80, paddingBottom: 80 }}>
         <span style={{ ...label, textAlign: "center", display: "block" }}>{t.cta.label}</span>
-        <h2 style={{ fontSize: "clamp(32px, 8vw, 48px)", fontWeight: 700, marginTop: 12, marginBottom: 18, lineHeight: 1.15 }}>
+        <h2 style={{ fontSize: "clamp(36px, 8vw, 56px)", fontWeight: 700, marginTop: 12, marginBottom: 18, lineHeight: 1.15 }}>
           {t.cta.title}
         </h2>
-        <p style={{ fontSize: 15, color: muted, maxWidth: 520, margin: "0 auto 36px", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "clamp(16px, 2.5vw, 18px)", color: muted, maxWidth: 580, margin: "0 auto 36px", lineHeight: 1.7 }}>
           {t.cta.desc}
         </p>
         <div className="flex flex-col md:flex-row justify-center items-stretch md:items-center gap-[14px] mb-[40px]">
@@ -28,10 +28,10 @@ export default function CtaSection() {
         <div className="flex flex-col md:flex-row flex-wrap justify-center items-stretch md:items-center gap-[20px] mt-[30px]">
           {brands.map((b, i) => (
              <div key={i} onClick={() => window.open(b.realUrl, "_blank")} className="flex items-center gap-[8px] bg-white/5 border border-white/5 rounded-xl px-[18px] py-[10px] cursor-pointer hover:bg-white/10 transition-colors">
-              <div style={{ width: 28, height: 28, borderRadius: 6, background: b.iconBg, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 12, color: bg }}>{b.icon}</div>
+              <div style={{ width: 32, height: 32, borderRadius: 6, background: b.iconBg, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 14, color: bg }}>{b.icon}</div>
               <div>
-                <div style={{ fontSize: 12, fontWeight: 700 }}>{b.name}</div>
-                <div style={{ fontSize: 9, color: faint }}>{b.url}</div>
+                <div style={{ fontSize: 14, fontWeight: 700 }}>{b.name}</div>
+                <div style={{ fontSize: 10, color: faint }}>{b.url}</div>
               </div>
             </div>
           ))}

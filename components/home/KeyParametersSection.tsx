@@ -9,7 +9,7 @@ import {
   textDark,
   sectionContainer,
 } from "./constants";
-import Counter from "./Counter";
+import { NumberTicker } from "@/components/ui/number-ticker";
 import { useLanguage } from "./LanguageContext";
 
 export default function KeyParametersSection() {
@@ -51,7 +51,7 @@ export default function KeyParametersSection() {
                 }}
               >
                 {"value" in p && p.value !== undefined ? (
-                  <Counter end={p.value} suffix={p.suffix} />
+                  <><NumberTicker value={p.value} />{p.suffix}</>
                 ) : (
                   p.v
                 )}

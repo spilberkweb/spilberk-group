@@ -73,14 +73,15 @@ export default function HeroSection() {
           zIndex: 1,
         }}
       >
-        <span style={label}>{t.hero.label}</span>
+        <span style={{ ...label, fontSize: 12, letterSpacing: 3, marginBottom: 14 }}>{t.hero.label}</span>
         <h1
           style={{
-            fontSize: "clamp(38px, 8vw, 56px)",
-            fontWeight: 700,
-            lineHeight: 1.08,
-            maxWidth: 700,
-            marginBottom: 12,
+            fontSize: "clamp(48px, 10vw, 84px)",
+            fontWeight: 800,
+            lineHeight: 1.05,
+            letterSpacing: "-0.02em",
+            maxWidth: 1000,
+            marginBottom: 20,
             marginTop: 14,
           }}
         >
@@ -98,9 +99,9 @@ export default function HeroSection() {
         </h1>
         <p
           style={{
-            fontSize: 14,
+            fontSize: "clamp(16px, 2.5vw, 18px)",
             color: faint,
-            marginBottom: 28,
+            marginBottom: 32,
             letterSpacing: 0.5,
           }}
         >
@@ -108,16 +109,16 @@ export default function HeroSection() {
         </p>
         <p
           style={{
-            fontSize: 17,
+            fontSize: "clamp(18px, 3vw, 22px)",
             color: muted,
-            maxWidth: 560,
-            lineHeight: 1.75,
-            marginBottom: 40,
+            maxWidth: 820,
+            lineHeight: 1.6,
+            marginBottom: 44,
           }}
         >
           {t.hero.desc}
         </p>
-        <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
           <Button
             onClick={() =>
               window.open(
@@ -125,7 +126,7 @@ export default function HeroSection() {
                 "_blank",
               )
             }
-            style={ctaBtn}
+            style={{ ...ctaBtn, fontSize: 16, padding: "20px 36px", fontWeight: 700, borderRadius: 50 }}
           >
             {t.hero.cta}
           </Button>
@@ -134,7 +135,7 @@ export default function HeroSection() {
               const el = document.getElementById("ecosystem");
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
-            style={ghostBtn}
+            style={{ ...ghostBtn, fontSize: 16, padding: "20px 36px", fontWeight: 700, borderRadius: 50 }}
           >
             {t.hero.ghost}
           </Button>

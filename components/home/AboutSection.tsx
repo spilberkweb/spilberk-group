@@ -29,7 +29,7 @@ export default function AboutSection() {
             <h2 style={h2StyleLight}>{t.about.title}</h2>
             <p
               style={{
-                fontSize: 14,
+                fontSize: "clamp(16px, 2vw, 18px)",
                 color: textDark,
                 opacity: 0.7,
                 lineHeight: 1.75,
@@ -40,7 +40,7 @@ export default function AboutSection() {
             </p>
             <p
               style={{
-                fontSize: 14,
+                fontSize: "clamp(16px, 2vw, 18px)",
                 color: textDark,
                 opacity: 0.7,
                 lineHeight: 1.75,
@@ -60,7 +60,7 @@ export default function AboutSection() {
                 <span
                   key={p}
                   style={{
-                    fontSize: 11,
+                    fontSize: "clamp(12px, 1.5vw, 14px)",
                     color: textDark,
                     opacity: 0.8,
                     background: "#FFFFFF",
@@ -82,7 +82,7 @@ export default function AboutSection() {
                   style={{ ...kpi, textAlign: "left", padding: "18px 20px" }}
                 >
                   <div
-                    style={{ fontSize: 18, marginBottom: 6 }}
+                    style={{ fontSize: "clamp(20px, 2.5vw, 24px)", marginBottom: 8 }}
                     dangerouslySetInnerHTML={{
                       __html: [
                         "&#128737;",
@@ -95,11 +95,11 @@ export default function AboutSection() {
                     }}
                   />
                   <h3
-                    style={{ fontSize: 13, color: textDark, fontWeight: 700, marginBottom: 4 }}
+                    style={{ fontSize: "clamp(15px, 2vw, 17px)", color: textDark, fontWeight: 700, marginBottom: 6 }}
                   >
                     {v.t}
                   </h3>
-                  <p style={{ fontSize: 11, color: textDark, opacity: 0.6, lineHeight: 1.5 }}>
+                  <p style={{ fontSize: "clamp(13px, 1.5vw, 15px)", color: textDark, opacity: 0.6, lineHeight: 1.5 }}>
                     {v.d}
                   </p>
                 </div>

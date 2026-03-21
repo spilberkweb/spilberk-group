@@ -108,14 +108,12 @@ export default function Navbar8({ className }: Navbar8Props) {
               style={{ textDecoration: "none" }}
             >
               <div
+                className="hidden sm:flex items-center justify-center shrink-0"
                 style={{
                   width: 34,
                   height: 34,
                   background: `linear-gradient(135deg, ${gold}, ${goldL})`,
                   borderRadius: 7,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
                   fontWeight: 800,
                   color: bg,
                   fontSize: 15,
@@ -123,7 +121,7 @@ export default function Navbar8({ className }: Navbar8Props) {
               >
                 S
               </div>
-              <img src={LOGO_SVG} alt="SPILBERK" style={{ height: 30 }} />
+              <img src={LOGO_SVG} alt="SPILBERK" style={{ height: 30 }} className="shrink-0 max-w-[140px] sm:max-w-none" />
             </a>
 
             <NavigationMenu className="hidden lg:flex">
@@ -181,14 +179,14 @@ export default function Navbar8({ className }: Navbar8Props) {
               </div>
 
               <Button
-                className="hidden lg:inline-flex"
+                className="hidden lg:inline-flex shrink-0 whitespace-nowrap"
                 onClick={() =>
                   window.open(
                     "https://www.avantfunds.cz/fondy/spilberk-investicni-fond-sicav-a-s/",
                     "_blank",
                   )
                 }
-                style={{ ...ctaBtn, padding: "10px 24px", fontSize: 13 }}
+                style={{ ...ctaBtn, padding: "10px 24px", fontSize: 13, display: undefined }}
               >
                 {t.nav.invest}
               </Button>
