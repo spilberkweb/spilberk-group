@@ -91,7 +91,7 @@ export default function Navbar8({ className }: Navbar8Props) {
   const isScrolled = scrollY > 60;
 
   return (
-    <header className={cn("sticky top-0 z-[100] w-full", className)}>
+    <header className={cn("fixed top-0 left-0 right-0 z-[100] w-full", className)}>
       <div
         className="w-full transition-all duration-300"
         style={{
