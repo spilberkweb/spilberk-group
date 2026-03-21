@@ -1,14 +1,13 @@
 "use client";
 
 import {
-  bg,
-  border,
-  faint,
+  bgLight,
+  textDark,
+  borderLight,
   getBrands,
   gold,
-  h2Style,
+  h2StyleLight,
   label,
-  muted,
   sectionContainer,
 } from "./constants";
 import { useLanguage } from "./LanguageContext";
@@ -18,16 +17,17 @@ export default function EcosystemSection() {
   const brands = getBrands(t);
 
   return (
-    <section id="ecosystem" style={sectionContainer}>
+    <section id="ecosystem" style={{ ...sectionContainer, background: bgLight, color: textDark }}>
       <div style={{ textAlign: "center", marginBottom: 50 }}>
         <span style={{ ...label, display: "block", textAlign: "center" }}>
           {t.ecosystem.label}
         </span>
-        <h2 style={{ ...h2Style, textAlign: "center" }}>{t.ecosystem.title}</h2>
+        <h2 style={{ ...h2StyleLight, textAlign: "center" }}>{t.ecosystem.title}</h2>
         <p
           style={{
             fontSize: 15,
-            color: muted,
+            color: textDark,
+            opacity: 0.7,
             lineHeight: 1.7,
             maxWidth: 560,
             margin: "0 auto",
@@ -37,9 +37,7 @@ export default function EcosystemSection() {
         </p>
       </div>
 
-      <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-5"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {brands.map((b, i) => (
           <a
             key={i}
@@ -49,8 +47,9 @@ export default function EcosystemSection() {
               textDecoration: "none",
               color: "inherit",
               display: "block",
-              background: "rgba(255,255,255,0.03)",
-              border: `1px solid ${border}`,
+              background: "#FFFFFF",
+              border: `1px solid ${borderLight}`,
+              boxShadow: "0 4px 24px rgba(0,0,0,0.03)",
               borderRadius: 20,
               padding: "36px 32px",
               position: "relative",
@@ -72,7 +71,7 @@ export default function EcosystemSection() {
             />
 
             {/* Brand logo top-right */}
-            <div className="hidden sm:block" style={{ position: "absolute", top: 20, right: 24 }}>
+            <div className="hidden sm:block" style={{ position: "absolute", top: 20, right: 24, opacity: 0.2, filter: "brightness(0)" }}>
               {b.logo(b.color)}
             </div>
 
@@ -96,13 +95,13 @@ export default function EcosystemSection() {
                   justifyContent: "center",
                   fontWeight: 800,
                   fontSize: 18,
-                  color: bg,
+                  color: "#FFFFFF",
                 }}
               >
                 {b.icon}
               </div>
               <div>
-                <div style={{ fontSize: 20, fontWeight: 700 }}>{b.name}</div>
+                <div style={{ fontSize: 20, fontWeight: 700, color: textDark }}>{b.name}</div>
                 <div
                   style={{
                     fontSize: 11,
@@ -120,7 +119,8 @@ export default function EcosystemSection() {
             <p
               style={{
                 fontSize: 13,
-                color: muted,
+                color: textDark,
+                opacity: 0.7,
                 lineHeight: 1.65,
                 marginBottom: 20,
                 minHeight: 44,
@@ -135,7 +135,7 @@ export default function EcosystemSection() {
                 <div
                   key={j}
                   style={{
-                    background: "rgba(255,255,255,0.04)",
+                    background: bgLight,
                     borderRadius: 10,
                     padding: "12px 16px",
                     flex: 1,
@@ -143,12 +143,12 @@ export default function EcosystemSection() {
                   }}
                 >
                   <div
-                    style={{ fontSize: 18, fontWeight: 700, color: "white" }}
+                    style={{ fontSize: 18, fontWeight: 700, color: textDark }}
                   >
                     {s.v}
                     {s.u && (
                       <span
-                        style={{ fontSize: 10, color: faint, marginLeft: 3 }}
+                        style={{ fontSize: 10, color: textDark, opacity: 0.5, marginLeft: 3 }}
                       >
                         {s.u}
                       </span>
@@ -170,7 +170,7 @@ export default function EcosystemSection() {
                 {b.cta} &#8594;
               </span>
               <span
-                style={{ fontSize: 10, color: faint, fontFamily: "monospace" }}
+                style={{ fontSize: 10, color: textDark, opacity: 0.5, fontFamily: "monospace" }}
               >
                 {b.url}
               </span>
@@ -183,8 +183,8 @@ export default function EcosystemSection() {
       <div
         className="flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6 md:gap-0 mt-8"
         style={{
-          background: `linear-gradient(135deg, rgba(200,169,110,0.06) 0%, rgba(64,64,138,0.06) 100%)`,
-          border: `1px solid rgba(200,169,110,0.15)`,
+          background: bgLight,
+          border: `1px solid ${borderLight}`,
           borderRadius: 16,
           padding: "32px 40px",
         }}
@@ -201,7 +201,7 @@ export default function EcosystemSection() {
                     height: 38,
                     borderRadius: "50%",
                     background: `linear-gradient(135deg, ${clr}40, ${clr}90)`,
-                    border: `2px solid ${bg}`,
+                    border: `2px solid ${bgLight}`,
                     marginLeft: i > 0 ? -12 : 0,
                     display: "flex",
                     alignItems: "center",
@@ -220,20 +220,21 @@ export default function EcosystemSection() {
             )}
           </div>
           <div>
-            <div style={{ fontSize: 22, fontWeight: 700, color: "white" }}>
+            <div style={{ fontSize: 22, fontWeight: 700, color: textDark }}>
               40<span style={{ color: gold }}>+</span>
               <span
                 style={{
                   fontSize: 14,
                   fontWeight: 500,
-                  color: muted,
+                  color: textDark,
+                  opacity: 0.7,
                   marginLeft: 8,
                 }}
               >
                 {t.ecosystem.teamPro}
               </span>
             </div>
-            <div style={{ fontSize: 12, color: faint, marginTop: 2 }}>
+            <div style={{ fontSize: 12, color: textDark, opacity: 0.6, marginTop: 2 }}>
               {t.ecosystem.teamDesc}
             </div>
           </div>
@@ -250,12 +251,12 @@ export default function EcosystemSection() {
                   style={{
                     fontSize: 18,
                     fontWeight: 700,
-                    color: i === 0 ? gold : "white",
+                    color: i === 0 ? gold : textDark,
                   }}
                 >
                   {s.v}
                 </div>
-                <div style={{ fontSize: 9, color: faint }}>{s.l}</div>
+                <div style={{ fontSize: 9, color: textDark, opacity: 0.5 }}>{s.l}</div>
               </div>
             ))}
           </div>

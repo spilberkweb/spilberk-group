@@ -1,13 +1,12 @@
 "use client";
 
 import {
-  border,
-  faint,
-  h2Style,
+  borderLight,
+  h2StyleLight,
   kpi,
   label,
-  muted,
-  sectionContainer,
+  bgLight,
+  textDark,
 } from "./constants";
 import { useLanguage } from "./LanguageContext";
 
@@ -18,19 +17,21 @@ export default function AboutSection() {
     <section
       id="about"
       style={{
-        background: "rgba(255,255,255,0.015)",
-        borderTop: `1px solid ${border}`,
+        background: bgLight,
+        borderTop: `1px solid ${borderLight}`,
+        color: textDark,
       }}
     >
-      <div style={sectionContainer}>
+      <div style={{ maxWidth: 1120, margin: "0 auto", padding: "clamp(50px, 8vw, 90px) clamp(20px, 5vw, 36px)" }}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[60px]">
           <div>
             <span style={label}>{t.about.label}</span>
-            <h2 style={h2Style}>{t.about.title}</h2>
+            <h2 style={h2StyleLight}>{t.about.title}</h2>
             <p
               style={{
                 fontSize: 14,
-                color: muted,
+                color: textDark,
+                opacity: 0.7,
                 lineHeight: 1.75,
                 marginBottom: 24,
               }}
@@ -40,7 +41,8 @@ export default function AboutSection() {
             <p
               style={{
                 fontSize: 14,
-                color: muted,
+                color: textDark,
+                opacity: 0.7,
                 lineHeight: 1.75,
                 marginBottom: 30,
               }}
@@ -59,9 +61,10 @@ export default function AboutSection() {
                   key={p}
                   style={{
                     fontSize: 11,
-                    color: faint,
-                    background: "rgba(255,255,255,0.04)",
-                    border: `1px solid ${border}`,
+                    color: textDark,
+                    opacity: 0.8,
+                    background: "#FFFFFF",
+                    border: `1px solid ${borderLight}`,
                     borderRadius: 20,
                     padding: "5px 14px",
                   }}
@@ -92,11 +95,11 @@ export default function AboutSection() {
                     }}
                   />
                   <h3
-                    style={{ fontSize: 13, fontWeight: 700, marginBottom: 4 }}
+                    style={{ fontSize: 13, color: textDark, fontWeight: 700, marginBottom: 4 }}
                   >
                     {v.t}
                   </h3>
-                  <p style={{ fontSize: 11, color: faint, lineHeight: 1.5 }}>
+                  <p style={{ fontSize: 11, color: textDark, opacity: 0.6, lineHeight: 1.5 }}>
                     {v.d}
                   </p>
                 </div>

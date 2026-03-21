@@ -1,6 +1,6 @@
 "use client";
 
-import { border, faint, gold, kpi } from "./constants";
+import { borderLight, gold, kpi, bgLight, textDark } from "./constants";
 import Counter from "./Counter";
 import { useLanguage } from "./LanguageContext";
 
@@ -10,9 +10,10 @@ export default function NumbersStrip() {
   return (
     <section
       style={{
-        background: "rgba(255,255,255,0.02)",
-        borderTop: `1px solid ${border}`,
-        borderBottom: `1px solid ${border}`,
+        background: bgLight,
+        borderTop: `1px solid ${borderLight}`,
+        borderBottom: `1px solid ${borderLight}`,
+        color: textDark,
       }}
     >
       <div style={{ maxWidth: 1120, margin: "0 auto", padding: "40px 36px" }}>
@@ -53,16 +54,16 @@ export default function NumbersStrip() {
                 style={{
                   fontSize: "clamp(20px, 5vw, 26px)",
                   fontWeight: 700,
-                  color: i === 3 || i === 4 ? gold : "white",
+                  color: i === 3 || i === 4 ? gold : textDark,
                   whiteSpace: "nowrap",
                 }}
               >
                 {k.v}
-                <span style={{ fontSize: 12, color: faint, marginLeft: 3 }}>
+                <span style={{ fontSize: 12, color: i === 3 || i === 4 ? gold : textDark, opacity: 0.7, marginLeft: 3 }}>
                   {k.u}
                 </span>
               </div>
-              <div style={{ fontSize: 10, color: faint, marginTop: 4 }}>
+              <div style={{ fontSize: 10, color: textDark, opacity: 0.5, marginTop: 4 }}>
                 {k.l}
               </div>
             </div>

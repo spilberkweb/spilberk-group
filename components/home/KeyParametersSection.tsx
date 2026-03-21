@@ -1,12 +1,12 @@
 "use client";
 
 import {
-  border,
-  faint,
+  borderLight,
   gold,
   kpi,
   label,
-  muted,
+  bgLight,
+  textDark,
   sectionContainer,
 } from "./constants";
 import Counter from "./Counter";
@@ -16,7 +16,7 @@ export default function KeyParametersSection() {
   const { t } = useLanguage();
 
   return (
-    <section style={{ borderTop: `1px solid ${border}` }}>
+    <section style={{ borderTop: `1px solid ${borderLight}`, background: bgLight, color: textDark }}>
       <div style={{ ...sectionContainer, paddingTop: 60, paddingBottom: 60 }}>
         <div style={{ textAlign: "center", marginBottom: 30 }}>
           <span style={{ ...label, textAlign: "center", display: "block" }}>
@@ -47,7 +47,7 @@ export default function KeyParametersSection() {
                 style={{
                   fontSize: "clamp(16px, 4vw, 20px)",
                   fontWeight: 700,
-                  color: i === 0 ? gold : "white",
+                  color: i === 0 ? gold : textDark,
                 }}
               >
                 {"value" in p && p.value !== undefined ? (
@@ -56,10 +56,10 @@ export default function KeyParametersSection() {
                   p.v
                 )}
               </div>
-              <div style={{ fontSize: 11, color: muted, marginTop: 4 }}>
+              <div style={{ fontSize: 11, color: textDark, opacity: 0.7, marginTop: 4 }}>
                 {p.l}
               </div>
-              <div style={{ fontSize: 9, color: faint, marginTop: 4 }}>
+              <div style={{ fontSize: 9, color: textDark, opacity: 0.5, marginTop: 4 }}>
                 {p.sub}
               </div>
             </div>
