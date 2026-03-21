@@ -16,7 +16,7 @@ export default function NumbersStrip() {
         color: textDark,
       }}
     >
-      <div style={{ maxWidth: 1120, margin: "0 auto", padding: "80px 36px" }}>
+      <div style={{ maxWidth: 1120, margin: "0 auto", padding: "50px 36px" }}>
         <div
           style={{
             display: "flex",

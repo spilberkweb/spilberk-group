@@ -68,21 +68,21 @@ export default function HeroSection() {
         style={{
           maxWidth: 1120,
           margin: "0 auto",
-          padding: "120px 36px 120px",
+          padding: "135px 36px 45px",
           position: "relative",
           zIndex: 1,
         }}
       >
-        <span style={{ ...label, fontSize: 12, letterSpacing: 3, marginBottom: 14 }}>{t.hero.label}</span>
+        <span style={{ ...label, fontSize: 11, letterSpacing: 2.5, marginBottom: 12 }}>{t.hero.label}</span>
         <h1
           style={{
-            fontSize: "clamp(48px, 10vw, 84px)",
+            fontSize: "clamp(34px, 5.5vw, 54px)",
             fontWeight: 800,
             lineHeight: 1.05,
-            letterSpacing: "-0.02em",
-            maxWidth: 1000,
-            marginBottom: 20,
-            marginTop: 14,
+            letterSpacing: "-0.01em",
+            maxWidth: 720,
+            marginBottom: 14,
+            marginTop: 8,
           }}
         >
           <span style={{ color: "white" }}>{t.hero.build}</span>
@@ -99,9 +99,9 @@ export default function HeroSection() {
         </h1>
         <p
           style={{
-            fontSize: "clamp(16px, 2.5vw, 18px)",
+            fontSize: "clamp(14px, 1.8vw, 15px)",
             color: faint,
-            marginBottom: 32,
+            marginBottom: 22,
             letterSpacing: 0.5,
           }}
         >
@@ -109,16 +109,16 @@ export default function HeroSection() {
         </p>
         <p
           style={{
-            fontSize: "clamp(18px, 3vw, 22px)",
+            fontSize: "clamp(15px, 2vw, 17px)",
             color: muted,
-            maxWidth: 820,
+            maxWidth: 620,
             lineHeight: 1.6,
-            marginBottom: 44,
+            marginBottom: 30,
           }}
         >
           {t.hero.desc}
         </p>
-        <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
           <Button
             onClick={() =>
               window.open(
@@ -126,7 +126,7 @@ export default function HeroSection() {
                 "_blank",
               )
             }
-            style={{ ...ctaBtn, fontSize: 16, padding: "20px 36px", fontWeight: 700, borderRadius: 50 }}
+            style={{ ...ctaBtn, fontSize: 14, padding: "14px 26px", fontWeight: 700, borderRadius: 50 }}
           >
             {t.hero.cta}
           </Button>
@@ -135,7 +135,7 @@ export default function HeroSection() {
               const el = document.getElementById("ecosystem");
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
-            style={{ ...ghostBtn, fontSize: 16, padding: "20px 36px", fontWeight: 700, borderRadius: 50 }}
+            style={{ ...ghostBtn, fontSize: 14, padding: "14px 26px", fontWeight: 700, borderRadius: 50 }}
           >
             {t.hero.ghost}
           </Button>
