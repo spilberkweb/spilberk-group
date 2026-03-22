@@ -84,17 +84,17 @@ export const translations = {
     brands: {
       fund: {
         tagline: "Konzervativní nemovitostní fond",
-        desc: "Fond kvalifikovaných investorů se 36 SPV entitami. Garantované výnosy, nízké riziko, likvidita do 3 měsíců. Základní kámen Vašeho portfolia.",
+        desc: "Fond kvalifikovaných investorů se 36 SPV entitami. Garantované výnosy, nízké riziko a likvidita do 3 měsíců. Je to základní kámen a stabilní pilíř Vašeho portfolia s důrazem na dlouhodobé zhodnocení.",
         cta: "Investujte s námi"
       },
       urban: {
         tagline: "Moderní nájemní bydlení",
-        desc: "Vlastní značka nájemního bydlení v Brně. Cílení na singles, expaty a studenty. Plně vybavené byty s coworkem a komunitními prostory.",
+        desc: "Vlastní značka nájemního bydlení v Brně. Cílení na singles, expaty a studenty. Plně vybavené designové byty s technickou správou, coworkem a komunitními prostory pro moderní městský život.",
         cta: "Prozkoumat nabídku"
       },
       rent: {
         tagline: "Sale-leaseback investiční produkt",
-        desc: "Produkt sale-leaseback: prodej bytu s garantovaným zpětným pronájmem. Fixní roční nájem, výnosem určená cena, dlouhodobý stabilní příjem.",
+        desc: "Produkt sale-leaseback: prodej bytu s garantovaným zpětným pronájmem. Fixní roční nájem, výnosem určená cena a dlouhodobý stabilní příjem. Ideální řešení pro uvolnění kapitálu při zachování užívání nemovitosti.",
         cta: "Více o produktu"
       }
     }
@@ -187,7 +187,7 @@ export const translations = {
       },
       urban: {
         tagline: "Modern rental housing",
-        desc: "Own brand of rental housing in Brno. Targeting singles, expats, and students. Fully equipped apartments with coworking and community spaces.",
+        desc: "Our own brand of rental housing in Brno. Targeting singles, expats, and students. Fully equipped design apartments with technical management, coworking, and community spaces for modern city life.",
         cta: "Explore the offer"
       },
       rent: {
@@ -285,7 +285,7 @@ export const translations = {
       },
       urban: {
         tagline: "Alloggi in affitto moderni",
-        desc: "Proprio marchio di alloggi in affitto a Brno. Rivolto a single, espatriati e studenti. Appartamenti completamente attrezzati con spazi di coworking e comunitari.",
+        desc: "Proprio marchio di alloggi in affitto a Brno. Rivolto a single, espatriati e studenti. Appartamenti di design completamente attrezzati con gestione tecnica, spazi di coworking i comunitari per la vita cittadina moderna.",
         cta: "Esplora l'offerta"
       },
       rent: {

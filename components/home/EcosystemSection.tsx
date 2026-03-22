@@ -38,16 +38,17 @@ export default function EcosystemSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {brands.map((b, i) => (
             <a
               key={i}
               href={b.realUrl}
-              className={i === 2 && brands.length === 3 ? "md:col-span-2 md:mx-auto md:w-[calc(50%-10px)]" : ""}
+              className={i === 2 && brands.length === 3 ? "md:col-span-2 lg:col-span-1 md:mx-auto lg:mx-0 md:w-[calc(50%-10px)] lg:w-full" : ""}
               style={{
                 textDecoration: "none",
                 color: "inherit",
-                display: "block",
+                display: "flex",
+                flexDirection: "column",
                 background: "#FFFFFF",
                 border: `1px solid ${borderLight}`,
                 boxShadow: "0 4px 24px rgba(0,0,0,0.03)",
@@ -57,6 +58,7 @@ export default function EcosystemSection() {
                 overflow: "hidden",
                 transition: "border-color 0.3s",
                 cursor: "pointer",
+                height: "100%",
               }}
             >
               {/* Accent top border */}
@@ -71,10 +73,6 @@ export default function EcosystemSection() {
                 }}
               />
 
-              {/* Brand logo top-right */}
-              <div className="hidden sm:block" style={{ position: "absolute", top: 20, right: 24, opacity: 0.2, filter: "brightness(0)" }}>
-                {b.logo(b.color)}
-              </div>
 
               {/* Header */}
               <div
@@ -109,6 +107,8 @@ export default function EcosystemSection() {
                       color: b.color,
                       fontWeight: 600,
                       letterSpacing: 0.5,
+                      lineHeight: 1.3,
+                      maxWidth: 140,
                     }}
                   >
                     {b.tagline}
@@ -123,53 +123,53 @@ export default function EcosystemSection() {
                   color: textDark,
                   opacity: 0.7,
                   lineHeight: 1.65,
-                  marginBottom: 20,
-                  minHeight: 44,
+                  marginBottom: 24,
+                  flexGrow: 1,
                 }}
               >
                 {b.desc}
               </p>
 
-              {/* Stats row */}
-              <div className="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-4 mb-5">
+              {/* Stats parameters */}
+              <div className="flex flex-wrap gap-2 mb-8">
                 {b.stats.map((s, j) => (
                   <div
                     key={j}
-                    className="flex-1 text-center rounded-xl py-2 px-1 sm:py-3 sm:px-4"
+                    className="flex items-baseline gap-1.5 rounded-lg py-1.5 px-3 transition-colors hover:bg-gray-200"
                     style={{
                       background: bgLight,
-                      minWidth: "calc(33% - 8px)",
+                      border: `1px solid ${borderLight}`,
                     }}
                   >
                     <div
-                      style={{ fontSize: "clamp(18px, 2.3vw, 24px)", fontWeight: 700, color: textDark, letterSpacing: -0.5 }}
+                      style={{ fontSize: 16, fontWeight: 700, color: textDark }}
                     >
                       {s.v}
-                      {s.u && (
-                        <span
-                          style={{ fontSize: "clamp(10px, 1.2vw, 13px)", color: textDark, opacity: 0.5, marginLeft: 2 }}
-                        >
-                          {s.u}
-                        </span>
-                      )}
                     </div>
+                    {s.u && (
+                      <span
+                        style={{ fontSize: 11, color: textDark, opacity: 0.5, fontWeight: 600 }}
+                      >
+                        {s.u}
+                      </span>
+                    )}
                   </div>
                 ))}
               </div>
 
-              {/* CTA + URL */}
+              {/* CTA + URL column stack */}
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
+                  flexDirection: "column",
+                  gap: 2,
                 }}
               >
-                <span style={{ fontSize: "clamp(14px, 1.5vw, 16px)", fontWeight: 700, color: b.color }}>
+                <span style={{ fontSize: 15, fontWeight: 700, color: b.color }}>
                   {b.cta} &#8594;
                 </span>
                 <span
-                  style={{ fontSize: "clamp(11px, 1.5vw, 13px)", color: textDark, opacity: 0.5, fontFamily: "monospace" }}
+                  style={{ fontSize: 12, color: textDark, opacity: 0.4, fontFamily: "monospace" }}
                 >
                   {b.url}
                 </span>
