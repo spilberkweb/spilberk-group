@@ -45,7 +45,28 @@ export default function Footer() {
       </div>
       <div style={{ borderTop: `1px solid ${border}`, padding: "20px 36px", maxWidth: 1120, margin: "0 auto", display: "flex", justifyContent: "space-between", fontSize: 9.5, color: "rgba(255,255,255,0.18)" }}>
         <span>{t.footer.rights}</span>
-        <span>{t.footer.links}</span>
+        <div style={{ display: "flex", gap: 12 }}>
+          {t.footer.links.split(" | ").map((link: string, idx: number, arr: string[]) => (
+            <span key={link} style={{ display: "flex", gap: 12 }}>
+              <a 
+                href="https://www.avantfunds.cz/fondy/spilberk-investicni-fond-sicav-a-s/#funds-files-block_66a00e4ba6bdae49f7f97f19e0c54fe3" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ 
+                  color: "rgba(255,255,255,0.6)", 
+                  textDecoration: "underline", 
+                  textUnderlineOffset: "2px",
+                  transition: "color 0.2s"
+                }}
+                onMouseOver={(e) => (e.currentTarget.style.color = "#fff")}
+                onMouseOut={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.6)")}
+              >
+                {link}
+              </a>
+              {idx < arr.length - 1 && <span style={{ opacity: 0.3 }}>|</span>}
+            </span>
+          ))}
+        </div>
       </div>
     </footer>
   );

@@ -3,7 +3,7 @@ export type Locale = "CZ" | "EN" | "IT";
 export const translations = {
   CZ: {
     nav: {
-      about: "O skupině",
+      about: "O fondu",
       ecosystem: "Ekosystém",
       projects: "Projekty",
       contact: "Kontakt",
@@ -22,8 +22,8 @@ export const translations = {
       assets: "majetek pod správou",
       built: "postavených bytů",
       spv: "entit ve struktuře",
-      yield: "garantovaný výnos",
-      risk: "nízké riziko fondu",
+      yield: "přednostní výnos",
+      risk: "řízené riziko fondu",
       pro: "profesionálů v týmu"
     },
     ecosystem: {
@@ -37,21 +37,23 @@ export const translations = {
       plats: "brandové platformy"
     },
     about: {
-      label: "O skupině",
-      title: "Komplexní přístup k nemovitostem",
-      desc1: "Jsme investiční a nemovitostní skupina. Stavíme na vlastním in-house developmentu, správě nemovitostí a finančním řízení. Díky tomu máme plnou kontrolu nad kvalitou a výnosy našich projektů.",
-      desc2: "Spolupracujeme s předními architekty, stavebními firmami a finančními institucemi. Náš tým tvoří zkušení profesionálové s dlouholetou praxí v oboru real estate a financí.",
+      label: "O fondu",
+      title: "Český nemovitostní fond s institucionální správou",
+      desc1: "SPILBERK investiční fond SICAV, a.s. byl založen v roce 2016 a je ryze českým fondem kvalifikovaných investorů. Zakladateli jsou Ing. Martin Pěnčík a Mgr. Robert Sedláček.",
+      desc2: "Fond spravuje diverzifikované portfolio nemovitostních a energetických projektů přes 36 SPV entit. Obhospodařovatelem fondu je AVANT investiční společnost. Fond podléhá dohledu České národní banky.",
       partners: "Naši partneři",
       partner1: "AVANT investiční společnost",
       partner2: "ČSOB (depozitář)",
       partner3: "ČNB (regulátor)",
+      partner4: "AUDIT ONE",
+      partner5: "BDO Czech Republic",
       features: [
-        { t: "Stabilita", d: "9+ let na trhu s konzervativním přístupem a nízkým rizikem." },
+        { t: "Stabilita", d: "9+ let na trhu se stabilním přístupem a řízeným rizikem." },
         { t: "Reálná aktiva", d: "Investice do hmotných projektů s jasným využitím a potenciálem." },
         { t: "Transparentnost", d: "Srozumitelný reporting a otevřená komunikace s investory." },
         { t: "Odpovědnost", d: "Rozhodnutí na základě analýzy, dat a vědomí dopadů." },
         { t: "Zkušenosti", d: "Řízení projektů napříč celým životním cyklem." },
-        { t: "Výkonnost", d: "Garantovaný výnos min. 7% p.a. i v případě ztráty fondu." },
+        { t: "Výkonnost", d: "Přednostní výnos min. 7% p.a. formou redistribuce vlastního kapitálu." },
       ]
     },
     params: {
@@ -83,8 +85,8 @@ export const translations = {
     },
     brands: {
       fund: {
-        tagline: "Konzervativní nemovitostní fond",
-        desc: "Fond kvalifikovaných investorů se 36 SPV entitami. Garantované výnosy, nízké riziko a likvidita do 3 měsíců. Je to základní kámen a stabilní pilíř Vašeho portfolia s důrazem na dlouhodobé zhodnocení.",
+        tagline: "Nemovitostní fond",
+        desc: "Fond kvalifikovaných investorů se 36 SPV entitami. Přednostní výnosy, řízené riziko a likvidita do 3 měsíců. Je to základní kámen a stabilní pilíř Vašeho portfolia s důrazem na dlouhodobé zhodnocení.",
         cta: "Investujte s námi"
       },
       urban: {
@@ -94,14 +96,14 @@ export const translations = {
       },
       rent: {
         tagline: "Sale-leaseback investiční produkt",
-        desc: "Produkt sale-leaseback: prodej bytu s garantovaným zpětným pronájmem. Fixní roční nájem, výnosem určená cena a dlouhodobý stabilní příjem. Ideální řešení pro uvolnění kapitálu při zachování užívání nemovitosti.",
+        desc: "Produkt sale-leaseback: prodej bytu se smluvně zajištěným zpětným pronájmem. Fixní roční nájem, výnosem určená cena a dlouhodobý stabilní příjem. Ideální řešení pro uvolnění kapitálu při zachování užívání nemovitosti.",
         cta: "Více o produktu"
       }
     }
   },
   EN: {
     nav: {
-      about: "About Group",
+      about: "About Fund",
       ecosystem: "Ecosystem",
       projects: "Projects",
       contact: "Contact",
@@ -120,8 +122,8 @@ export const translations = {
       assets: "assets under management",
       built: "apartments built",
       spv: "entities in structure",
-      yield: "guaranteed yield",
-      risk: "low fund risk",
+      yield: "priority yield",
+      risk: "managed fund risk",
       pro: "professionals in team"
     },
     ecosystem: {
@@ -135,21 +137,23 @@ export const translations = {
       plats: "brand platforms"
     },
     about: {
-      label: "About Group",
-      title: "Comprehensive approach to real estate",
-      desc1: "We are an investment and real estate group. We build on our own in-house development, property management, and financial management. Thanks to this, we have full control over the quality and returns of our projects.",
-      desc2: "We collaborate with leading architects, construction companies, and financial institutions. Our team consists of experienced professionals with many years of practice in real estate and finance.",
+      label: "About Fund",
+      title: "Czech real estate fund with institutional management",
+      desc1: "SPILBERK investment fund SICAV, a.s. was established in 2016 and is a purely Czech fund for qualified investors. The founders are Ing. Martin Pěnčík and Mgr. Robert Sedláček.",
+      desc2: "The fund manages a diversified portfolio of real estate and energy projects through 36 SPV entities. The investment manager of the fund is AVANT investment company. The fund is subject to the supervision of the Czech National Bank.",
       partners: "Our partners",
       partner1: "AVANT investment company",
       partner2: "ČSOB (depository)",
       partner3: "ČNB (regulator)",
+      partner4: "AUDIT ONE",
+      partner5: "BDO Czech Republic",
       features: [
-        { t: "Stability", d: "9+ years on the market with a conservative approach and low risk." },
+        { t: "Stability", d: "9+ years on the market with a stable approach and managed risk." },
         { t: "Real Assets", d: "Investments in tangible projects with clear use and potential." },
         { t: "Transparency", d: "Clear reporting and open communication with investors." },
         { t: "Responsibility", d: "Decisions based on analysis, data, and awareness of impacts." },
         { t: "Experience", d: "Project management across the entire life cycle." },
-        { t: "Performance", d: "Guaranteed yield min. 7% p.a. even in case of fund loss." },
+        { t: "Performance", d: "Priority yield min. 7% p.a. via equity redistribution." },
       ]
     },
     params: {
@@ -181,8 +185,8 @@ export const translations = {
     },
     brands: {
       fund: {
-        tagline: "Conservative real estate fund",
-        desc: "Fund of qualified investors with 36 SPV entities. Guaranteed returns, low risk, liquidity up to 3 months. The cornerstone of your portfolio.",
+        tagline: "Real estate fund",
+        desc: "Fund of qualified investors with 36 SPV entities. Priority returns, managed risk, liquidity up to 3 months. The cornerstone of your portfolio.",
         cta: "Invest with us"
       },
       urban: {
@@ -192,14 +196,14 @@ export const translations = {
       },
       rent: {
         tagline: "Sale-leaseback investment product",
-        desc: "Sale-leaseback product: sale of an apartment with guaranteed leaseback. Fixed annual rent, yield-determined price, long-term stable income.",
+        desc: "Sale-leaseback product: sale of an apartment with contractually secured leaseback. Fixed annual rent, yield-determined price, long-term stable income.",
         cta: "More about the product"
       }
     }
   },
   IT: {
     nav: {
-      about: "Sul Gruppo",
+      about: "Sul Fondo",
       ecosystem: "Ecosistema",
       projects: "Progetti",
       contact: "Contatto",
@@ -218,8 +222,8 @@ export const translations = {
       assets: "patrimonio in gestione",
       built: "appartamenti costruiti",
       spv: "entità nella struttura",
-      yield: "rendimento garantito",
-      risk: "basso rischio del fondo",
+      yield: "rendimento prioritario",
+      risk: "rischio gestito del fondo",
       pro: "professionisti nel team"
     },
     ecosystem: {
@@ -233,21 +237,23 @@ export const translations = {
       plats: "piattaforme di marchi"
     },
     about: {
-      label: "Sul Gruppo",
-      title: "Approccio completo agli immobili",
-      desc1: "Siamo un gruppo di investimenti e immobiliare. Costruiamo sul nostro sviluppo in-house, gestione immobiliare e gestione finanziaria. Grazie a questo abbiamo il pieno controllo sulla qualità e sui rendimenti dei nostri progetti.",
-      desc2: "Collaboriamo con architetti leader, imprese di costruzione e istituzioni finanziarie. Il nostro team è composto da professionisti esperti con molti anni di pratica nel settore immobiliare e finanziario.",
+      label: "Sul Fondo",
+      title: "Fondo immobiliare ceco con gestione istituzionale",
+      desc1: "Il fondo di investimento SPILBERK SICAV, a.s. è stato fondato nel 2016 ed è un fondo puramente ceco per investitori qualificati. I fondatori sono Ing. Martin Pěnčík e Mgr. Robert Sedláček.",
+      desc2: "Il fondo gestisce un portafoglio diversificato di progetti immobiliari ed energetici attraverso 36 entità SPV. Il gestore del fondo è AVANT società di investimento. Il fondo è soggetto alla vigilanza della Banca Nazionale Ceca.",
       partners: "I nostri partner",
       partner1: "AVANT società di investimento",
       partner2: "ČSOB (depositario)",
       partner3: "ČNB (regolatore)",
+      partner4: "AUDIT ONE",
+      partner5: "BDO Czech Republic",
       features: [
-        { t: "Stabilità", d: "Oltre 9 anni sul mercato con un approccio conservativo e basso rischio." },
+        { t: "Stabilità", d: "Oltre 9 anni sul mercato con un approccio stabile e rischio gestito." },
         { t: "Asset Reali", d: "Investimenti in progetti tangibili con uso e potenziale chiari." },
         { t: "Trasparenza", d: "Reporting chiaro e comunicazione aperta con gli investitori." },
         { t: "Responsabilità", d: "Decisioni basate su analisi, dati e consapevolezza degli impatti." },
         { t: "Esperienza", d: "Gestione dei progetti durante l'intero ciclo di vita." },
-        { t: "Performance", d: "Rendimento garantito min. 7% p.a. anche in caso di perdita del fondo." },
+        { t: "Performance", d: "Rendimento prioritario min. 7% p.a. via ridistribuzione del capitale." },
       ]
     },
     params: {
@@ -279,8 +285,8 @@ export const translations = {
     },
     brands: {
       fund: {
-        tagline: "Fondo immobiliare conservativo",
-        desc: "Fondo di investitori qualificati con 36 entità SPV. Rendimenti garantiti, basso rischio, liquidità fino a 3 mesi. La pietra angolare del tuo portafoglio.",
+        tagline: "Fondo immobiliare",
+        desc: "Fondo di investitori qualificati con 36 entità SPV. Rendimenti prioritari, rischio gestito, liquidità fino a 3 mesi. La pietra angolare del tuo portafoglio.",
         cta: "Investi con noi"
       },
       urban: {
@@ -290,7 +296,7 @@ export const translations = {
       },
       rent: {
         tagline: "Prodotto di investimento sale-leaseback",
-        desc: "Prodotto sale-leaseback: vendita di un appartamento con leaseback garantito. Affitto annuale fisso, prezzo determinato dal rendimento, reddito stabile a lungo termine.",
+        desc: "Prodotto sale-leaseback: vendita di un appartamento con leaseback assicurato da contratto. Affitto annuale fisso, prezzo determinato dal rendimento, reddito stabile a lungo termine.",
         cta: "Scopri di più"
       }
     }
