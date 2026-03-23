@@ -14,7 +14,7 @@ export const translations = {
       build: "Budujeme. Spravujeme.",
       appreciate: "Zhodnocujeme.",
       subtitle: "Development · Správa · Investice | www.spilberk.com",
-      desc: "Česká nemovitostní skupina pokrývající celý životní cyklus nemovitosti — od developmentu přes správu a nájemní bydlení až po investiční zhodnocení. 9+ let na trhu, 2,6+ mld CZK pod správou.",
+      desc: "Česká nemovitostní skupina pokrývající celý životní cyklus nemovitosti — od developmentu přes správu a nájemní bydlení až po investiční zhodnocení. 10+ let na trhu, 2,6+ mld CZK pod správou.",
       cta: "Investujte s námi →",
       ghost: "Poznat naše brandy"
     },
@@ -48,7 +48,7 @@ export const translations = {
       partner4: "AUDIT ONE",
       partner5: "BDO Czech Republic",
       features: [
-        { t: "Stabilita", d: "9+ let na trhu se stabilním přístupem a řízeným rizikem." },
+        { t: "Stabilita", d: "10+ let na trhu se stabilním přístupem a řízeným rizikem." },
         { t: "Reálná aktiva", d: "Investice do hmotných projektů s jasným využitím a potenciálem." },
         { t: "Transparentnost", d: "Srozumitelný reporting a otevřená komunikace s investory." },
         { t: "Odpovědnost", d: "Rozhodnutí na základě analýzy, dat a vědomí dopadů." },
@@ -114,7 +114,7 @@ export const translations = {
       build: "We Build. We Manage.",
       appreciate: "We Appreciate.",
       subtitle: "Development · Management · Investment | www.spilberk.com",
-      desc: "A Czech real estate group covering the entire life cycle of real estate — from development through property management and rental housing to investment appreciation. 9+ years on the market, 2.6+ billion CZK under management.",
+      desc: "A Czech real estate group covering the entire life cycle of real estate — from development through property management and rental housing to investment appreciation. 10+ years on the market, 2.6+ billion CZK under management.",
       cta: "Invest with us →",
       ghost: "Discover our brands"
     },
@@ -148,7 +148,7 @@ export const translations = {
       partner4: "AUDIT ONE",
       partner5: "BDO Czech Republic",
       features: [
-        { t: "Stability", d: "9+ years on the market with a stable approach and managed risk." },
+        { t: "Stability", d: "10+ years on the market with a stable approach and managed risk." },
         { t: "Real Assets", d: "Investments in tangible projects with clear use and potential." },
         { t: "Transparency", d: "Clear reporting and open communication with investors." },
         { t: "Responsibility", d: "Decisions based on analysis, data, and awareness of impacts." },
@@ -214,7 +214,7 @@ export const translations = {
       build: "Costruiamo. Gestiamo.",
       appreciate: "Valorizziamo.",
       subtitle: "Sviluppo · Gestione · Investimenti | www.spilberk.com",
-      desc: "Un gruppo immobiliare ceco che copre l'intero ciclo di vita degli immobili — dallo sviluppo alla gestione di proprietà e alloggi in affitto fino alla valorizzazione degli investimenti. 9+ anni sul mercato, oltre 2,6 miliardi di CZK in gestione.",
+      desc: "Un gruppo immobiliare ceco che copre l'intero ciclo di vita degli immobili — dallo sviluppo alla gestione di proprietà e alloggi in affitto fino alla valorizzazione degli investimenti. 10+ anni sul mercato, oltre 2,6 miliardi di CZK in gestione.",
       cta: "Investi con noi →",
       ghost: "Scopri i nostri marchi"
     },
@@ -248,7 +248,7 @@ export const translations = {
       partner4: "AUDIT ONE",
       partner5: "BDO Czech Republic",
       features: [
-        { t: "Stabilità", d: "Oltre 9 anni sul mercato con un approccio stabile e rischio gestito." },
+        { t: "Stabilità", d: "Oltre 10 anni sul mercato con un approccio stabile e rischio gestito." },
         { t: "Asset Reali", d: "Investimenti in progetti tangibili con uso e potenziale chiari." },
         { t: "Trasparenza", d: "Reporting chiaro e comunicazione aperta con gli investitori." },
         { t: "Responsabilità", d: "Decisioni basate su analisi, dati e consapevolezza degli impatti." },

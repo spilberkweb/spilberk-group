@@ -22,9 +22,9 @@ export default function Footer() {
           <div>
             <div style={{ fontSize: 10, fontWeight: 700, color: faint, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 14 }}>{t.footer.websites}</div>
             {[
-              { label: "fund.spilberk.com", href: "https://wafer-accent-33203612.figma.site" },
+              { label: "spilberkfund.com", href: "https://spilberkfund.com" },
               { label: "urbanblok.cz", href: "https://www.urbanblok.cz" },
-              { label: "rentback.spilberk.com", href: "https://send-size-81349154.figma.site" },
+              { label: "rentback.cz", href: "https://rentback.cz" },
             ].map(l => (
               <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" style={{ display: "block", fontSize: 11, color: faint, marginBottom: 6, textDecoration: "none" }}>{l.label}</a>
             ))}

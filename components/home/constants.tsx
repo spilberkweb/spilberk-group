@@ -80,8 +80,8 @@ export const getBrands = (t: any) => [
   {
     name: "SPILBERK Fund",
     tagline: t.brands.fund.tagline,
-    url: "fund.spilberk.com",
-    realUrl: "https://wafer-accent-33203612.figma.site",
+    url: "spilberkfund.com",
+    realUrl: "https://spilberkfund.com",
     color: gold,
     icon: "S",
     iconBg: `linear-gradient(135deg, ${gold}, ${goldL})`,
@@ -126,7 +126,7 @@ export const getBrands = (t: any) => [
   {
     name: "RENT|BACK",
     tagline: t.brands.rent.tagline,
-    url: "rentback.spilberk.com",
+    url: "rentback.cz",
     realUrl: "https://rentback.cz",
     color: "#A07ECF",
     icon: "R",

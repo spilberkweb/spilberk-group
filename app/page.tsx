@@ -12,13 +12,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Skupina SPILBERK | Nemovitostní ekosystém",
-  description: "Česká nemovitostní skupina pokrývající celý životní cyklus nemovitosti — od developmentu přes správu a nájemní bydlení až po investiční zhodnocení. 9+ let na trhu, 2,6+ mld CZK pod správou.",
+  description: "Česká nemovitostní skupina pokrývající celý životní cyklus nemovitosti — od developmentu přes správu a nájemní bydlení až po investiční zhodnocení. 10+ let na trhu, 2,6+ mld CZK pod správou.",
   keywords: ["nemovitosti", "investice", "development", "správa nemovitostí", "nájemní bydlení", "SPILBERK fund", "SICAV"],
   authors: [{ name: "Skupina SPILBERK" }],
   metadataBase: new URL("https://www.spilberk.com"),
   openGraph: {
     title: "Skupina SPILBERK | Nemovitostní ekosystém",
-    description: "Budujeme. Spravujeme. Zhodnocujeme. Česká nemovitostní skupina s 9+ lety na trhu.",
+    description: "Budujeme. Spravujeme. Zhodnocujeme. Česká nemovitostní skupina s 10+ lety na trhu.",
     url: "https://www.spilberk.com",
     siteName: "Skupina SPILBERK",
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Skupina SPILBERK | Nemovitostní ekosystém",
-    description: "Budujeme. Spravujeme. Zhodnocujeme. Česká nemovitostní skupina s 9+ lety na trhu.",
+    description: "Budujeme. Spravujeme. Zhodnocujeme. Česká nemovitostní skupina s 10+ lety na trhu.",
     images: ["/spilberk-logo.png"],
   },
 };
