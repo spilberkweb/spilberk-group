@@ -8,6 +8,37 @@ import CtaSection from "@/components/home/CtaSection";
 import Footer from "@/components/home/Footer";
 import { bg } from "@/components/home/constants";
 import { LanguageProvider } from "@/components/home/LanguageContext";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Skupina SPILBERK | Nemovitostní ekosystém",
+  description: "Česká nemovitostní skupina pokrývající celý životní cyklus nemovitosti — od developmentu přes správu a nájemní bydlení až po investiční zhodnocení. 9+ let na trhu, 2,6+ mld CZK pod správou.",
+  keywords: ["nemovitosti", "investice", "development", "správa nemovitostí", "nájemní bydlení", "SPILBERK fund", "SICAV"],
+  authors: [{ name: "Skupina SPILBERK" }],
+  metadataBase: new URL("https://www.spilberk.com"),
+  openGraph: {
+    title: "Skupina SPILBERK | Nemovitostní ekosystém",
+    description: "Budujeme. Spravujeme. Zhodnocujeme. Česká nemovitostní skupina s 9+ lety na trhu.",
+    url: "https://www.spilberk.com",
+    siteName: "Skupina SPILBERK",
+    images: [
+      {
+        url: "/spilberk-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Skupina SPILBERK Logo",
+      },
+    ],
+    locale: "cs_CZ",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Skupina SPILBERK | Nemovitostní ekosystém",
+    description: "Budujeme. Spravujeme. Zhodnocujeme. Česká nemovitostní skupina s 9+ lety na trhu.",
+    images: ["/spilberk-logo.png"],
+  },
+};
 
 export default function Home() {
   return (
