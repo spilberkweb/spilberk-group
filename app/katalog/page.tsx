@@ -7,7 +7,7 @@ export default function KatalogPage() {
   return (
     <div
       style={{
-        fontFamily: "'Segoe UI', system-ui, -apple-system, sans-serif",
+        fontFamily: "var(--font-montserrat), 'Segoe UI', system-ui, sans-serif",
         background: bg,
         color: "white",
         minHeight: "100vh",
@@ -45,8 +45,9 @@ export default function KatalogPage() {
           </span>
           <h1
             style={{
+              fontFamily: "var(--font-playfair), Georgia, serif",
               fontSize: "clamp(32px, 6vw, 46px)",
-              fontWeight: 800,
+              fontWeight: 400,
               lineHeight: 1.15,
               marginBottom: 16,
               color: "white",
