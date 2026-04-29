@@ -3,7 +3,7 @@
 import { BookOpen } from "lucide-react";
 import { bg, gold, goldL, muted, border } from "@/components/home/constants";
 
-export default function CataloguePage() {
+export default function PortfolioPage() {
   return (
     <div
       style={{
@@ -53,10 +53,10 @@ export default function CataloguePage() {
               color: "white",
             }}
           >
-            Product Catalogue
+            Project Portfolio
           </h1>
           <p style={{ color: muted, fontSize: 17, lineHeight: 1.7 }}>
-            Download the complete SPILBERK Group catalogue with an overview of
+            Download the complete SPILBERK Group project portfolio with an overview of
             funds, brands, and investment opportunities.
           </p>
         </div>
@@ -90,7 +90,7 @@ export default function CataloguePage() {
           </div>
           <div>
             <p style={{ fontWeight: 700, fontSize: 17, marginBottom: 4 }}>
-              SPILBERK Group — Catalogue
+              SPILBERK Group — Project Portfolio
             </p>
             <p style={{ color: muted, fontSize: 14 }}>PDF document</p>
           </div>
@@ -133,7 +133,7 @@ export default function CataloguePage() {
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            Download catalogue
+            Download portfolio
           </a>
         </div>
 
